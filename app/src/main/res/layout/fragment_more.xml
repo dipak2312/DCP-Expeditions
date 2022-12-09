@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/aller"
+                android:text="More About DCP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size16">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/rel_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginTop="@dimen/margin_50">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="About Us"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_about_us">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="Contact Info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_contact_info">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_terms_condition"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_privacy_policy">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_cancellation_policy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_terms_condition">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="Cancellation Policy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_report_problem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_cancellation_policy">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="Report A Problem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_share_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_below="@+id/rel_report_problem">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/aller"
+                    android:text="Share The App"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_insta"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_below="@id/rel_share_app"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/txt_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text="Follow Us On :"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+
+                <ImageView
+                    android:id="@+id/img_facebook"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_12"
+                    android:layout_toEndOf="@id/txt_title1"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/img_instagram"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_12"
+                    android:layout_toEndOf="@+id/img_facebook"
+                    android:src="@drawable/insta" />
+
+                <ImageView
+                    android:id="@+id/img_twitter"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_12"
+                    android:layout_toEndOf="@+id/img_instagram"
+                    android:src="@drawable/twitter" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_link"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_below="@id/rel_insta"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20">
+
+                <TextView
+                    android:id="@+id/txt_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text="Visit Our Website:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_website_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/txt_link"
+                    android:background="@drawable/border_orange">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/aller"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10"
+                        android:text="http://www.dcpexpeditions.com/"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size12" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_link"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_40"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/txt_copyright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:fontFamily="@font/aller"
+                    android:text="Copyright © 2020 Powered by DCP Expeditions All rights reserved."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size12" />
+
+                <TextView
+                    android:id="@+id/txt_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_copyright"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:alpha="0.3"
+                    android:fontFamily="@font/aller"
+                    android:text="Version - 1.0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size12" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

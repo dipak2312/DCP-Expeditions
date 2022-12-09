@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/homeselector"/>
+    <item
+        android:id="@+id/membership"
+        android:title="Membership"
+        android:icon="@drawable/membershipselector"
+        />
+    <item
+        android:id="@+id/store"
+        android:title="Store"
+        android:icon="@drawable/storeselector" />
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+        android:icon="@drawable/notificationselector"
+        />
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        android:icon="@drawable/moreselector"
+        />
+
+</menu>

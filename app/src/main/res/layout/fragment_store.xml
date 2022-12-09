@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/storefram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_first_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.35">
+
+            <TextView
+                android:id="@+id/txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/margin_10"
+                android:textSize="@dimen/text_size14"
+                android:alpha="0.4"
+                android:fontFamily="@font/aller"
+                android:text="@string/count"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.4"
+            android:background="@drawable/category_border"
+            android:layout_weight="0.65">
+
+            <Spinner
+                android:id="@+id/spinner_cate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:popupBackground="@color/green"
+                android:spinnerMode="dropdown"
+                android:backgroundTint="@color/white">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:alpha="0.2"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/Fent_light_gray">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/lin_all_work_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_3"
+        android:layout_marginRight="@dimen/margin_3">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_store_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".Home.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/mysingleworkshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel_top_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_190">
+
+                <ImageView
+                    android:id="@+id/top_imp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_190"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_150"
+                    android:layout_height="@dimen/margin_120"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/dcplogo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/margin_25"
+                    android:layout_marginEnd="@dimen/margin_25">
+
+                    <TextView
+                        android:id="@+id/txt_rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aller"
+                        android:text="@string/headline"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/margin_18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_rent"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/allerlt"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:text="Try DCP Rental Service"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size11"
+                        android:textStyle="italic" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_workshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_top_img"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_40"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:text="List Of Workshops"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/discover_cate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/allerlt"
+                    android:text="Discover Categories"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size11"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/len_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_workshop"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/flight_img"
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="@dimen/margin_120"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flight_img" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flight_img"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_flight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="DCP Online Masterclass - Photographing Birds In Flight, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <TextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_flight"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="30, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_date"
+                            android:background="@color/Fent_line">
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_below="@id/rel_line"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10"
+                                android:fontFamily="@font/aller"
+                                android:text="@string/rs_2_500"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text_size10" />
+
+                            <Button
+                                android:id="@+id/book_btn1"
+                                android:layout_width="@dimen/margin_80"
+                                android:layout_height="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_15"
+                                android:background="@drawable/book_now_btn"
+                                android:fontFamily="@font/aller"
+                                android:text="Book Now"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/margin_10" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/margin_165"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <ImageView
+                        android:id="@+id/workshop_img"
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="@dimen/margin_120"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/workshop_img" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/workshop_img"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_workshop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="DCP Online Masterclass - Advanced Photography Workshop, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <TextView
+                            android:id="@+id/txt_date2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_workshop"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="31, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_date2"
+                            android:background="@color/Fent_line">
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_below="@id/rel_line2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10"
+                                android:fontFamily="@font/aller"
+                                android:text="@string/rs_2_500"
+                                android:textColor="#f65366"
+                                android:textSize="@dimen/text_size10" />
+
+                            <Button
+                                android:id="@+id/book_btn2"
+                                android:layout_width="@dimen/margin_80"
+                                android:layout_height="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_15"
+                                android:layout_marginEnd="@dimen/margin_5"
+                                android:background="@drawable/book_now_btn"
+                                android:fontFamily="@font/aller"
+                                android:text="Book Now"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size10" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rel_line3"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/len_list"
+                android:layout_marginTop="@dimen/margin_50"
+                android:background="@color/Fent_light_gray"
+                android:alpha="0.2">
+
+            </View>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_phototours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_line3"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:text="List Of Photo Tours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/discover_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/allerlt"
+                    android:text="Discover Categories"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size11"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/len_photolist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_phototours"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/flight_img3"
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="@dimen/margin_120"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flight_img" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flight_img3"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_flight3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="DCP Online Masterclass - Photographing Birds In Flight, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <TextView
+                            android:id="@+id/txt_date5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_flight3"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="30, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_date5"
+                            android:background="@color/Fent_line">
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_below="@id/rel_line6"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10"
+                                android:fontFamily="@font/aller"
+                                android:text="@string/rs_2_500"
+                                android:textColor="#f65366"
+                                android:textSize="@dimen/text_size10" />
+
+                            <Button
+                                android:id="@+id/book_btn3"
+                                android:layout_width="@dimen/margin_80"
+                                android:layout_height="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_15"
+                                android:background="@drawable/book_now_btn"
+                                android:fontFamily="@font/aller"
+                                android:text="Book Now"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size10" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/margin_165"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <ImageView
+                        android:id="@+id/workshop_img3"
+                        android:layout_width="@dimen/margin_165"
+                        android:layout_height="@dimen/margin_120"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/workshop_img" />
+
+                    <RelativeLayout
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/workshop_img3"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_workshop3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="DCP Online Masterclass - Advanced Photography Workshop, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <TextView
+                            android:id="@+id/txt_date6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_workshop3"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:fontFamily="@font/aller"
+                            android:text="31, May 2020"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size10" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_line7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_date6"
+                            android:background="@color/Fent_line">
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_below="@id/rel_line7"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10"
+                                android:fontFamily="@font/aller"
+                                android:text="@string/rs_2_500"
+                                android:textColor="#f65366"
+                                android:textSize="@dimen/text_size10" />
+
+                            <Button
+                                android:id="@+id/book_btn4"
+                                android:layout_width="@dimen/margin_80"
+                                android:layout_height="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_15"
+                                android:background="@drawable/book_now_btn"
+                                android:fontFamily="@font/aller"
+                                android:text="Book Now"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size10" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rel_line10"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/len_photolist"
+                android:layout_marginTop="@dimen/margin_50"
+                android:background="@color/Fent_light_gray"
+                android:alpha="0.2">
+
+            </View>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_rental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_line10"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:text="Rental"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/aller"
+                    android:text="Discover Categories"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size11"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/camera_imgs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_below="@id/rel_rental"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_40"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle1"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/canon_img" />
+
+                    <TextView
+                        android:id="@+id/camera1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:text="Nikon"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View More"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle2"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/sony_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:text="Sony"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View More"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle3"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/nikon_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:text="Nikon"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View More"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

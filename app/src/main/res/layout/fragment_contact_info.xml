@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/aller"
+                android:text="Contact Info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size16">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/rel_all_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginLeft="@dimen/text_size10"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginRight="@dimen/text_size10">
+
+                <ImageView
+                    android:id="@+id/img_address"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:src="@drawable/location">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_toEndOf="@+id/img_address"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text="@string/address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/rel_all_add"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:alpha="0.2"
+                android:background="@color/Fent_light_gray">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rel_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_55"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/img_no"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:src="@drawable/phone">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_toEndOf="@+id/img_no"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text="+91 226 1818 464"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14">
+
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_55"
+                android:layout_below="@+id/rel_mobile_no"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/img_email"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:src="@drawable/mail">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_toEndOf="@+id/img_email"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text="@string/email"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size14">
+
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.2"
+                    android:background="@color/Fent_light_gray">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_working"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_email_id"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/img_working"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:src="@drawable/watch_later"
+                    android:textSize="@dimen/text_size14">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_working_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_toEndOf="@+id/img_working"
+                    android:alpha="0.8"
+                    android:fontFamily="@font/aller"
+                    android:text=""
+                    android:textColor="@color/white">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/rel_working"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:alpha="0.2"
+                android:background="@color/Fent_light_gray">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:fontFamily="@font/aller"
+                    android:text="Send Us A Message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size18" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt"
+                android:layout_marginStart="@dimen/margin_60"
+                android:layout_marginEnd="@dimen/margin_60"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Full Name*"
+                  android:textStyle="normal"
+                  android:fontFamily="@font/aller"
+                  android:textColor="@color/white"
+                  android:layout_marginStart="@dimen/margin_10"
+                  android:textSize="@dimen/text_size14"/>
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aller"
+                        android:hint="Your Name"
+                        android:textColor="@color/white"
+                        android:capitalize="words"
+                        android:padding="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColorHint="@color/light_white"
+                        android:background="@drawable/border_white"
+                        android:textSize="@dimen/text_size14" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No*"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/allerlt"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textSize="@dimen/text_size14"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Mobile Number"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aller"
+                        android:textSize="@dimen/margin_14"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:capitalize="words"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:background="@drawable/border_white"
+                        android:padding="@dimen/padding_10"
+                        android:textColorHint="@color/light_white"
+                        android:layout_centerInParent="true"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email ID*"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/allerlt"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textSize="@dimen/text_size14"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Email ID"
+                        android:textColor="@color/white"
+                        android:background="@drawable/border_white"
+                        android:fontFamily="@font/aller"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/margin_14"
+                        android:capitalize="words"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:padding="@dimen/padding_10"
+                        android:textColorHint="@color/light_white"
+                        android:layout_centerInParent="true"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/allerlt"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textSize="@dimen/text_size14"/>
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Subject"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aller"
+                        android:textSize="@dimen/margin_14"
+                        android:capitalize="words"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:background="@drawable/border_white"
+                        android:padding="@dimen/padding_10"
+                        android:textColorHint="@color/light_white"
+                        android:layout_centerInParent="true"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message*"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/allerlt"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textSize="@dimen/text_size14"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_150"
+                        android:hint="Your Message"
+                        android:textColor="@color/white"
+                        android:background="@drawable/border_white"
+                        android:fontFamily="@font/aller"
+                        android:textSize="@dimen/margin_14"
+                        android:capitalize="words"
+                        android:gravity="top"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:padding="@dimen/padding_10"
+                        android:textColorHint="@color/light_white" />
+
+
+                <Button
+                    android:layout_width="@dimen/margin_130"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/button_baground"
+                    android:fontFamily="@font/aller"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="@dimen/margin_50"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
